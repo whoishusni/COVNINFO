@@ -1,80 +1,103 @@
 package id.husni.covninfo;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.view.Display;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.PieData;
-import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.interfaces.datasets.IPieDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import id.husni.covninfo.activity.AboutActivity;
+import id.husni.covninfo.activity.InfoActivity;
+import id.husni.covninfo.activity.SettingActivity;
+import id.husni.covninfo.fragment.IdnFragment;
+import id.husni.covninfo.fragment.TodayFragment;
+import id.husni.covninfo.fragment.SummaryFragment;
 
-import java.util.ArrayList;
-import java.util.List;
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-import id.husni.covninfo.model.ModelData;
-import id.husni.covninfo.service.ApiEndpoint;
-import id.husni.covninfo.service.RetrofitServiceApi;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-
-public class MainActivity extends AppCompatActivity {
-
-    PieChart summaryChart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        summaryChart = findViewById(R.id.summaryChart);
+        //Menampilkan Fragment Summary Ketika App Dibuka
+        SummaryFragment summaryFragment = new SummaryFragment();
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.main_frame,summaryFragment)
+                .commit();
 
-        Retrofit retrofit = RetrofitServiceApi.getRetrofitService();
-        ApiEndpoint endpoint = retrofit.create(ApiEndpoint.class);
-        Call<ModelData> call = endpoint.getModelData();
-        call.enqueue(new Callback<ModelData>() {
-            @Override
-            public void onResponse(Call<ModelData> call, Response<ModelData> response) {
-                ModelData modelData = response.body();
-                List<PieEntry> pieEntries = new ArrayList<>();
-                pieEntries.add(new PieEntry(modelData.getConfirmed(),"Confirmed"));
-                pieEntries.add(new PieEntry(modelData.getDeath(), "Deaths"));
-                pieEntries.add(new PieEntry(modelData.getRecovered(), "Recovered"));
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
-                PieDataSet pieDataSet = new PieDataSet(pieEntries, "From Corona Virus");
-                pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
-                pieDataSet.setValueTextSize(17);
-                pieDataSet.setValueTextColor(Color.WHITE);
-                pieDataSet.setValueLineColor(Color.WHITE);
 
-                PieData pieData = new PieData(pieDataSet);
+    }
 
-                Description description = new Description();
-                description.setText("Real Time Update");
-                description.setTextColor(Color.WHITE);
-                description.setTextSize(13);
+    //Menu Navigasi Bawah
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            //Ke Fragment Summary
+            case R.id.summaryMenu:
+                SummaryFragment summaryFragment = new SummaryFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_frame,summaryFragment)
+                        .commit();
+                return true;
 
-                summaryChart.setVisibility(View.VISIBLE);
-                summaryChart.animateXY(2000,2000);
-                summaryChart.setDescription(description);
-                summaryChart.setData(pieData);
+            //Ke Fragment Idn
+            case R.id.summaryIdnMenu:
+                IdnFragment idnFragment = new IdnFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_frame,idnFragment)
+                        .commit();
+                return true;
 
-            }
+            //Ke Fragment Today
+            case R.id.todayMenu:
+                TodayFragment todayFragment = new TodayFragment();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.main_frame,todayFragment)
+                        .commit();
+                return true;
+        }
+        return false;
+    }
 
-            @Override
-            public void onFailure(Call<ModelData> call, Throwable t) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //menampilkan menu utama
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-            }
-        });
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //Memilih Masing-Masing Menu pada main menu
+        switch (item.getItemId()) {
+            //Ke activity Info
+            case R.id.infoMenu:
+                Intent intentInfo = new Intent(this, InfoActivity.class);
+                startActivity(intentInfo);
+                break;
+            //Ke activity Setting
+            case R.id.settingMenu:
+                Intent intentSetting = new Intent(this, SettingActivity.class);
+                startActivity(intentSetting);
+                break;
+           //Ke activity About
+           case R.id.aboutMenu:
+                Intent intentAbout = new Intent(this, AboutActivity.class);
+                startActivity(intentAbout);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

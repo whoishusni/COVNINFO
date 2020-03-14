@@ -9,6 +9,4 @@ import retrofit2.http.GET;
 
 public interface ApiEndpoint {
 
-    @GET(AppUtils.ENDPOINT_SUMMARY)
-    Call<ModelData>getModelData();
 }

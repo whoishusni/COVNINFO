@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/summaryMenu"
+        android:icon="@drawable/ic_world_summary"
+        android:title="@string/summary" />
+
+    <item
+        android:id="@+id/summaryIdnMenu"
+        android:icon="@drawable/ic_idn_summary"
+        android:title="@string/indonesia" />
+
+    <item
+        android:id="@+id/todayMenu"
+        android:icon="@drawable/ic_today"
+        android:title="@string/today" />
+</menu>

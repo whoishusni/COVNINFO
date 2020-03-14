@@ -2,4 +2,13 @@
     <string name="app_name">COVNINFO</string>
     <string name="detail">Latest News</string>
     <string name="around_the_world_data">Covid 19 Data Around The World</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summary">Summary</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="info">Info</string>
+    <string name="today">Today</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
 </resources>
