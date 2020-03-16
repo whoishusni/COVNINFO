@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginHorizCard">17dp</dimen>
+    <dimen name="marginVertiCard">8dp</dimen>
+    <dimen name="cardRadius">8dp</dimen>
+    <dimen name="cardElevation">4dp</dimen>
+    <dimen name="marginLisLinear">10dp</dimen>
+    <dimen name="marginBottomBetweenTextList">8dp</dimen>
+</resources>

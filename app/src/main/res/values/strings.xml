@@ -11,4 +11,10 @@
     <string name="today">Today</string>
     <string name="about">About</string>
     <string name="setting">Setting</string>
+    <string name="textview">TextView</string>
+    <string name="not_update">Today\'s data has not been updated</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="recovered">Recovered</string>
+    <string name="deaths">Deaths</string>
+    <string name="legends">Legends :</string>
 </resources>
