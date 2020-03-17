@@ -18,6 +18,7 @@ import androidx.core.app.NotificationManagerCompat;
 
 import java.util.Calendar;
 
+import id.husni.covninfo.MainActivity;
 import id.husni.covninfo.R;
 
 public class DailyReceiver extends BroadcastReceiver {
@@ -25,12 +26,17 @@ public class DailyReceiver extends BroadcastReceiver {
     private static final int DAILY_REQUEST_CODE = 100;
     private static final String CHANNEL_ID = "Daily Notification Channel ID" ;
     private static final CharSequence CHANNEL_NAME = "Daily Notification Channel NAME";
+    private static final int REQUEST_CODE_CONTENT_INTENT = 200;
+
+    private int notifId = 1;
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        //jika kondisi terpenuhi, akan mmenjalankan method dibawah, dan mereset notifId menjadi 1
         showDailyReminderNotif(context);
+        notifId = 1;
     }
-
+    //method untuk set notifikasi
     public void setDailyNotif(Context context) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Calendar calendar = Calendar.getInstance();
@@ -45,7 +51,7 @@ public class DailyReceiver extends BroadcastReceiver {
         }
         Toast.makeText(context, R.string.daily_reminder_setup, Toast.LENGTH_SHORT).show();
     }
-
+    //method untuk batalkan reminder
     public void setCancelDailyNotif(Context context) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(context, DailyReceiver.class);
@@ -56,14 +62,17 @@ public class DailyReceiver extends BroadcastReceiver {
         }
         Toast.makeText(context, R.string.daily_reminder_canceled, Toast.LENGTH_SHORT).show();
     }
-
+    //method untuk menampilkan notifikasi
     private void showDailyReminderNotif(Context context) {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        Intent toMainActivity = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntentContent = PendingIntent.getActivity(context, REQUEST_CODE_CONTENT_INTENT, toMainActivity, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setAutoCancel(true)
                 .setContentTitle(context.getResources().getString(R.string.app_name))
-                .setContentTitle(context.getResources().getString(R.string.notif_title))
+                .setContentText(context.getResources().getString(R.string.notif_title))
+                .setContentIntent(pendingIntentContent)
                 .setSmallIcon(R.drawable.ic_healing)
                 .setSound(alarmSound)
                 .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000});
@@ -78,7 +87,7 @@ public class DailyReceiver extends BroadcastReceiver {
                 notificationManager.createNotificationChannel(channel);
             }
         }
-        int notifId = 3;
+
         Notification notification = builder.build();
         if (notificationManager != null) {
             notificationManager.notify(notifId,notification);
