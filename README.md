@@ -1,12 +1,14 @@
 # COVNINFO (Under Development)  
 ## Covid Nineteen (Covid-19) Info   
 ## Library Reference :  
-1. [Mathdroid](https://github.com/mathdroid/covid-19-api) for JSON Data  
-2. [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
-3. [GSON](https://github.com/google/gson)  
-4. [Retrofit](https://github.com/square/retrofit)
-5. ViewModel  
-6. LiveData  
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
+- [GSON](https://github.com/google/gson)  
+- [Retrofit](https://github.com/square/retrofit)
+- ViewModel  
+- LiveData  
+
+## API  
+- [Mathdroid](https://github.com/mathdroid/covid-19-api) for JSON Data  
 
 ## License
 MIT License  
