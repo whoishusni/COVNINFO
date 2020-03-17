@@ -6,4 +6,10 @@
 3. [GSON](https://github.com/google/gson)  
 4. [Retrofit](https://github.com/square/retrofit)
 5. ViewModel  
-6. LiveData
+6. LiveData  
+
+## License
+MIT License  
+
+Copyright (c) 2020 Moh Husni Mubaraq  
+Transitively from the John Hopkins Site, the data may not be used for commercial purposes.
