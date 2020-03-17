@@ -13,7 +13,7 @@
         android:title="@string/indonesia" />
 
     <item
-        android:id="@+id/todayMenu"
+        android:id="@+id/historyMenu"
         android:icon="@drawable/ic_today"
-        android:title="@string/today" />
+        android:title="@string/history" />
 </menu>

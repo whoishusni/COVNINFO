@@ -16,24 +16,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import id.husni.covninfo.R;
 import id.husni.covninfo.adapter.TodayListAdapter;
-import id.husni.covninfo.model.TodayModel;
-import id.husni.covninfo.viewmodel.TodayViewModel;
+import id.husni.covninfo.model.HistoryModel;
+import id.husni.covninfo.viewmodel.HistoryViewModel;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TodayFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class HistoryFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     private TodayListAdapter adapter;
     private TextView tvEmptyList;
     private SwipeRefreshLayout swipeRefreshLayout;
-    public TodayFragment() {
+    public HistoryFragment() {
         // Required empty public constructor
     }
 
@@ -42,7 +41,7 @@ public class TodayFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_today, container, false);
+        return inflater.inflate(R.layout.fragment_history, container, false);
     }
 
     @Override
@@ -68,17 +67,17 @@ public class TodayFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
     private void loadListData() {
-        TodayViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(TodayViewModel.class);
+        HistoryViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(HistoryViewModel.class);
         viewModel.setTodayData();
         swipeRefreshLayout.setRefreshing(true);
-        viewModel.getTodayListData().observe(this, new Observer<ArrayList<TodayModel>>() {
+        viewModel.getTodayListData().observe(this, new Observer<ArrayList<HistoryModel>>() {
             @Override
-            public void onChanged(ArrayList<TodayModel> todayModels) {
-                if (todayModels == null) {
+            public void onChanged(ArrayList<HistoryModel> historyModels) {
+                if (historyModels == null) {
                     tvEmptyList.setVisibility(View.VISIBLE);
                     swipeRefreshLayout.setRefreshing(false);
                 } else {
-                    adapter.setTodayModels(todayModels);
+                    adapter.setHistoryModels(historyModels);
                     swipeRefreshLayout.setRefreshing(false);
                 }
             }

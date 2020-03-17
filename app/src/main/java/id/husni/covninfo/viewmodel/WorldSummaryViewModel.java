@@ -4,9 +4,6 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import id.husni.covninfo.model.WorldSummaryModel;
 import id.husni.covninfo.service.ApiEndpoint;
 import id.husni.covninfo.service.RetrofitServiceApi;

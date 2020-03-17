@@ -2,7 +2,7 @@ package id.husni.covninfo.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class TodayModel {
+public class HistoryModel {
     @SerializedName("countryRegion")
     private String countryRegion;
     @SerializedName("lastUpdate")
@@ -14,7 +14,7 @@ public class TodayModel {
     @SerializedName("recovered")
     private String recovered;
 
-    public TodayModel(String countryRegion, String lastUpdate, String confirmed, String deaths, String recovered) {
+    public HistoryModel(String countryRegion, String lastUpdate, String confirmed, String deaths, String recovered) {
         this.countryRegion = countryRegion;
         this.lastUpdate = lastUpdate;
         this.confirmed = confirmed;

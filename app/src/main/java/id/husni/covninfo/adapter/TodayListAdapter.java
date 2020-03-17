@@ -12,26 +12,26 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import id.husni.covninfo.R;
-import id.husni.covninfo.model.TodayModel;
+import id.husni.covninfo.model.HistoryModel;
 
 public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.ViewHolder> {
-    ArrayList<TodayModel> todayModels = new ArrayList<>();
-    Context context;
+    private ArrayList<HistoryModel> historyModels = new ArrayList<>();
+    private Context context;
 
     public TodayListAdapter(Context context) {
         this.context = context;
     }
 
-    public ArrayList<TodayModel> getTodayModels() {
-        return todayModels;
+    public ArrayList<HistoryModel> getHistoryModels() {
+        return historyModels;
     }
 
-    public void setTodayModels(ArrayList<TodayModel> items) {
-        if (todayModels != null) {
-            if (todayModels.size() > 0) {
-                todayModels.clear();
+    public void setHistoryModels(ArrayList<HistoryModel> items) {
+        if (historyModels != null) {
+            if (historyModels.size() > 0) {
+                historyModels.clear();
             }
-            todayModels.addAll(items);
+            historyModels.addAll(items);
         }
         notifyDataSetChanged();
     }
@@ -39,32 +39,32 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     @NonNull
     @Override
     public TodayListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.today_item_holder,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.history_item_holder,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull TodayListAdapter.ViewHolder holder, int position) {
-        holder.lastUpdateDate.setText(todayModels.get(position).getLastUpdate());
-        holder.tvConfirmed.setText(todayModels.get(position).getConfirmed());
-        holder.tvRecovered.setText(todayModels.get(position).getRecovered());
-        holder.tvDeath.setText(todayModels.get(position).getDeaths());
-        holder.tvListCountry.setText(todayModels.get(position).getCountryRegion());
+        holder.lastUpdateDate.setText(historyModels.get(position).getLastUpdate());
+        holder.tvConfirmed.setText(historyModels.get(position).getConfirmed());
+        holder.tvRecovered.setText(historyModels.get(position).getRecovered());
+        holder.tvDeath.setText(historyModels.get(position).getDeaths());
+        holder.tvListCountry.setText(historyModels.get(position).getCountryRegion());
     }
 
     @Override
     public int getItemCount() {
-        return todayModels.size();
+        return historyModels.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView lastUpdateDate;
-        public TextView tvConfirmed;
-        public TextView tvRecovered;
-        public TextView tvDeath;
-        public TextView tvListCountry;
+        TextView lastUpdateDate;
+        TextView tvConfirmed;
+        TextView tvRecovered;
+        TextView tvDeath;
+        TextView tvListCountry;
 
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             lastUpdateDate = itemView.findViewById(R.id.tvListLastUpdate);
             tvConfirmed = itemView.findViewById(R.id.tvListConfirmed);
