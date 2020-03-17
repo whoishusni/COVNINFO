@@ -6,4 +6,5 @@
     <dimen name="cardElevation">4dp</dimen>
     <dimen name="marginLisLinear">10dp</dimen>
     <dimen name="marginBottomBetweenTextList">8dp</dimen>
+    <dimen name="summaryTitleTextSize">14sp</dimen>
 </resources>

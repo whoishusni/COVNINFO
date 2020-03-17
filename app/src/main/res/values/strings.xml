@@ -3,7 +3,6 @@
     <string name="detail">Latest News</string>
     <string name="around_the_world_data">Covid 19 Data Around The World</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="summary">Summary</string>
     <string name="indonesia">Indonesia</string>
@@ -17,4 +16,7 @@
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
     <string name="legends">Legends :</string>
+    <string name="world_summary_data">World Summary Data</string>
+    <string name="daily_update">Daily Update</string>
+    <string name="from_corona">From Corona</string>
 </resources>
