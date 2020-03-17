@@ -9,6 +9,7 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.SwitchPreferenceCompat;
 
 import id.husni.covninfo.R;
+import id.husni.covninfo.receiver.DailyReceiver;
 
 public class DailyRemider extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
     private String KEYDAILY;
@@ -43,16 +44,16 @@ public class DailyRemider extends PreferenceFragmentCompat implements SharedPref
         getPreferenceScreen().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);
     }
 
-    //TODO : [FUNCTION] BUAT BROADCAST RECEIVER DI METHOD BAWAH
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        DailyReceiver dailyReceiver = new DailyReceiver();
         if (key.equals(KEYDAILY)) {
             if (dailySwitchPreference.isChecked()) {
                 //Jika Switch ON
-                Toast.makeText(getContext(), "CHECKED", Toast.LENGTH_SHORT).show();
+                dailyReceiver.setDailyNotif(getContext());
             } else {
                 //Jika Switch OFF
-                Toast.makeText(getContext(), "UNCHECKED", Toast.LENGTH_SHORT).show();
+                dailyReceiver.setCancelDailyNotif(getContext());
             }
         }
     }
