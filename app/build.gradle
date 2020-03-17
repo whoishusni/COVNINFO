@@ -47,6 +47,6 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     //MaterialDesign
     implementation 'com.google.android.material:material:1.1.0'
-    //Shimmet
-    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    //Preference
+    implementation 'androidx.preference:preference:1.1.0'
 }

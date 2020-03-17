@@ -69,7 +69,7 @@ public class SummaryFragment extends Fragment {
                 PieData pieData = new PieData(pieDataSet);
 
                 Description description = new Description();
-                description.setText(getResources().getString(R.string.daily_update));
+                description.setText(getResources().getString(R.string.last_update) +" : "+ worldSummaryModel.getLastUpdate());
                 description.setTextColor(Color.WHITE);
                 description.setTextSize(14);
 

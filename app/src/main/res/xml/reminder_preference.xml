@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--TODO : [BUG] WARNA TEXT REMINDER MASIH WARNA HITAM BELUM PUTIH-->
+    <SwitchPreference
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:icon="@drawable/ic_alarm"
+        android:key="@string/key_daily_reminder"
+        android:title="@string/daily_notif"
+        android:summary="@string/daily_reminder_summary"/>
+</PreferenceScreen>

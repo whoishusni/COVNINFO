@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import id.husni.covninfo.R;
 
 public class InfoActivity extends AppCompatActivity {
-
+    //TODO : [FEATURE] GEJALA, PENCEGAHAN, RUMAH SAKIT
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver
+            android:name=".receiver.DailyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.SettingActivity" />
         <activity android:name=".activity.InfoActivity" />
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -2,7 +2,6 @@
     <string name="app_name">COVNINFO</string>
     <string name="detail">Latest News</string>
     <string name="around_the_world_data">Covid 19 Data Around The World</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="summary">Summary</string>
     <string name="indonesia">Indonesia</string>
@@ -11,7 +10,7 @@
     <string name="about">About</string>
     <string name="setting">Setting</string>
     <string name="textview">TextView</string>
-    <string name="not_update">Today\'s data has not been updated</string>
+    <string name="not_update">History\'s data has not been updated, <br> Check Your Internet Connection</br></string>
     <string name="confirmed">Confirmed</string>
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
@@ -19,4 +18,8 @@
     <string name="world_summary_data">World Summary Data</string>
     <string name="daily_update">Daily Update</string>
     <string name="from_corona">From Corona</string>
+    <string name="daily_notif">Daily Notification</string>
+    <string name="key_daily_reminder">daily reminder key</string>
+    <string name="daily_reminder_summary">Daily Reminder Every 08:00</string>
+    <string name="last_update">Last Update</string>
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import id.husni.covninfo.R;
+import id.husni.covninfo.reminder.DailyRemider;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -18,6 +19,9 @@ public class SettingActivity extends AppCompatActivity {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        //inflate fragment reminder
+        getSupportFragmentManager().beginTransaction().add(R.id.setting_frame,new DailyRemider()).commit();
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
