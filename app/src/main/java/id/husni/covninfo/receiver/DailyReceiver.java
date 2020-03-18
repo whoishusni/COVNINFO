@@ -14,11 +14,10 @@ import android.os.Build;
 import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
 import java.util.Calendar;
 
-import id.husni.covninfo.MainActivity;
+import id.husni.covninfo.activity.MainActivity;
 import id.husni.covninfo.R;
 
 public class DailyReceiver extends BroadcastReceiver {

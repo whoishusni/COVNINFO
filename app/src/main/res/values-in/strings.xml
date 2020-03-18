@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">COVNINFO</string>
+    <string name="summary">Ringkasan</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="info">Info</string>
+    <string name="history">Riwayat</string>
+    <string name="about">Tentang</string>
+    <string name="setting">Pengaturan</string>
+    <string name="not_update">Data Riwayat Belum Di Update</string>
+    <string name="confirmed">Terkonfirmasi</string>
+    <string name="recovered">Sembuh</string>
+    <string name="deaths">Kematian</string>
+    <string name="legends">Ket :</string>
+    <string name="world_summary_data">Ringkasan Data Dunia</string>
+    <string name="from_corona">Dari Covid-19</string>
+    <string name="daily_notif">Notifikasi Harian</string>
+    <string name="key_daily_reminder">daily reminder key</string>
+    <string name="daily_reminder_summary">Pengingat Harian Tiap Jam 08:00</string>
+    <string name="last_update">Last Update</string>
+    <string name="daily_reminder_setup">Pengingat Harian Di Atur</string>
+    <string name="daily_reminder_canceled">Pengingat Harian Dibatalkan</string>
+    <string name="notif_title">Check Aplikasi Untuk Melihat Data Baru</string>
+    <string name="hospital">Rumah Sakit</string>
+    <string name="symptoms">Gejala</string>
+    <string name="prevention">Pencegahan</string>
+    <string name="redirect">Menuju Halaman…</string>
+    <string name="advice_from_who">Saran Dari WHO</string>
+    <string name="aboutLabelSubtitle">" Ini adalah aplikasi untuk mengetahui berita tentang penyakit Virus Corona"</string>
+    <string name="aboutLabelVersion">Versi</string>
+    <string name="aboutTextVersion">1.0</string>
+    <string name="aboutLabelDeveloper">Developer</string>
+    <string name="aboutTextDeveloper">Moh Husni Mubaraq</string>
+    <string name="aboutLabelLicense">Lisensi</string>
+    <string name="aboutTextLicense">MIT License (C) 2020 Moh Husni Mubaraq</string>
+    <string name="aboutLabelDatabase">Database</string>
+    <string name="aboutTextDatabase">Organisasi Kesehatan Dunia (WHO)</string>
+    <string name="aboutLabelJsonApi">API</string>
+    <string name="aboutTextJsonApi">Mathdroid</string>
+    <string name="find_me_on_github_github_com_whoishusni">Temukan Saya Di Github :</string>
+    <string name="github">Github</string>
+    <string name="indonesia_summary_data">Ringkasan Data Indonesia</string>
+
+</resources>

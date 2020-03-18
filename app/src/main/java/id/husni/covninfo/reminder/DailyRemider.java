@@ -2,11 +2,9 @@ package id.husni.covninfo.reminder;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
-import androidx.preference.SwitchPreferenceCompat;
 
 import id.husni.covninfo.R;
 import id.husni.covninfo.receiver.DailyReceiver;

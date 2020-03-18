@@ -1,4 +1,4 @@
-package id.husni.covninfo;
+package id.husni.covninfo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import id.husni.covninfo.R;
 import id.husni.covninfo.activity.AboutActivity;
 import id.husni.covninfo.activity.InfoActivity;
 import id.husni.covninfo.activity.SettingActivity;

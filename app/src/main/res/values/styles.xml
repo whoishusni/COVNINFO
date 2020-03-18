@@ -17,7 +17,8 @@
         <item name="android:layout_marginStart">@dimen/marginHorizCard</item>
         <item name="android:layout_marginEnd">@dimen/marginHorizCard</item>
     </style>
-    <style name="AppTheme.infoTitleStyle">
+    <!--TODO : RENCANA MAU HAPUS STYLE BAWAH-->
+   <!-- <style name="AppTheme.infoTitleStyle">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
@@ -26,7 +27,7 @@
         <item name="android:layout_marginTop">@dimen/marginVertiCard</item>
         <item name="android:layout_marginStart">@dimen/marginHorizCard</item>
         <item name="android:layout_marginEnd">@dimen/marginHorizCard</item>
-    </style>
+    </style>-->
     <style name="AppTheme.chartStyle">
         <item name="android:layout_marginBottom">@dimen/marginVertiCard</item>
         <item name="android:layout_marginStart">@dimen/marginHorizCard</item>
@@ -43,5 +44,4 @@
         <item name="android:layout_marginStart">@dimen/marginHorizCard</item>
         <item name="android:layout_marginEnd">@dimen/marginHorizCard</item>
     </style>
-
 </resources>
