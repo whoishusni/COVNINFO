@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.InfoActivity"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".activity.InfoActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/AppTheme.styleMarginAll">
+
+        <Button
+            android:id="@+id/btnInfoSymptom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableTop="@drawable/ic_symptom"
+            android:text="@string/symptoms"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnInfoPrevention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableTop="@drawable/ic_prevention"
+            android:text="@string/prevention"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnInfoHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableTop="@drawable/ic_hospital"
+            android:text="@string/hospital"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnInfoAdviceWho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableTop="@drawable/ic_who"
+            android:text="@string/advice_from_who"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

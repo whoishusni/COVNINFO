@@ -19,6 +19,7 @@ public class SettingActivity extends AppCompatActivity {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        setTheme(R.style.AppTheme_SettingStyle);
         //inflate fragment reminder
         getSupportFragmentManager().beginTransaction().add(R.id.setting_frame,new DailyRemider()).commit();
 
