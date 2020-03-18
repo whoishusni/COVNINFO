@@ -1,5 +1,4 @@
 # COVNINFO (Under Development)  
-## Covid Nineteen (Covid-19) Info   
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
