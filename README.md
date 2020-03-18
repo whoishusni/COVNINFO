@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="500" src="https://drive.google.com/file/d/1uIAIWQ4dI4IBRJdYxkOOJc85QRBx-zVV/view?usp=sharing" />
-</p>
+![alt text](https://drive.google.com/file/d/1uIAIWQ4dI4IBRJdYxkOOJc85QRBx-zVV/view)
 # COVNINFO
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
