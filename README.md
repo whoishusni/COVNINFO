@@ -1,4 +1,7 @@
-# COVNINFO (Under Development)  
+<p align="center">
+  <img width="500" src="https://drive.google.com/file/d/1uIAIWQ4dI4IBRJdYxkOOJc85QRBx-zVV/view?usp=sharing" />
+</p>
+# COVNINFO
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
