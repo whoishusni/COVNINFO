@@ -1,4 +1,4 @@
-![demo_image](https://user-images.githubusercontent.com/28988446/76968800-11841d00-695c-11ea-89b5-f41c4e17690c.png)
+![demo_image](https://user-images.githubusercontent.com/28988446/77063551-79943b00-6a10-11ea-9d93-a67d559ea583.png)
 # COVNINFO
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
