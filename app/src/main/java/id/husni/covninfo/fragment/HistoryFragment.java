@@ -20,7 +20,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.husni.covninfo.R;
-import id.husni.covninfo.adapter.TodayListAdapter;
+import id.husni.covninfo.adapter.HistoryListAdapter;
 import id.husni.covninfo.model.HistoryModel;
 import id.husni.covninfo.viewmodel.HistoryViewModel;
 
@@ -29,7 +29,7 @@ import id.husni.covninfo.viewmodel.HistoryViewModel;
  */
 public class HistoryFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
-    private TodayListAdapter adapter;
+    private HistoryListAdapter adapter;
     private TextView tvEmptyList;
     private SwipeRefreshLayout swipeRefreshLayout;
     public HistoryFragment() {
@@ -53,7 +53,7 @@ public class HistoryFragment extends Fragment implements SwipeRefreshLayout.OnRe
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshList);
         RecyclerView recyclerView = view.findViewById(R.id.listRecycler);
 
-        adapter = new TodayListAdapter(getContext());
+        adapter = new HistoryListAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
         loadListData();

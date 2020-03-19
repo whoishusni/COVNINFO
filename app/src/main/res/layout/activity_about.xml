@@ -56,9 +56,10 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvVersion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/aboutTextVersion"
+           tools:text="nomor Versi"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
 

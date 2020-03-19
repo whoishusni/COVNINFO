@@ -27,13 +27,12 @@
     <string name="advice_from_who">Advice From WHO</string>
     <string name="aboutLabelSubtitle">This is an application to find out news on Corona Virus disease</string>
     <string name="aboutLabelVersion">Version</string>
-    <string name="aboutTextVersion">1.0</string>
     <string name="aboutLabelDeveloper">Developer</string>
     <string name="aboutTextDeveloper">Moh Husni Mubaraq</string>
     <string name="aboutLabelLicense">License</string>
     <string name="aboutTextLicense">MIT License (C) 2020 Moh Husni Mubaraq</string>
     <string name="aboutLabelDatabase">Database</string>
-    <string name="aboutTextDatabase">World Health Organisation (WHO)</string>
+    <string name="aboutTextDatabase">Data Repository by Johns Hopkins CSSE</string>
     <string name="aboutLabelJsonApi">API</string>
     <string name="aboutTextJsonApi">Mathdroid</string>
     <string name="find_me_on_github_github_com_whoishusni">Find Me On Github :</string>

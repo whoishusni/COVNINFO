@@ -26,7 +26,8 @@
         <receiver
             android:name=".receiver.DailyReceiver"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"
+            android:permission="TODO" />
 
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.SettingActivity" />

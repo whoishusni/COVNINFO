@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import id.husni.covninfo.BuildConfig;
 import id.husni.covninfo.R;
 
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
@@ -22,7 +24,9 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-
+        String versionApp = BuildConfig.VERSION_NAME;
+        TextView tvVersion = findViewById(R.id.tvVersion);
+        tvVersion.setText(versionApp);
         Button btnGithub = findViewById(R.id.githubBtn);
         btnGithub.setOnClickListener(this);
     }

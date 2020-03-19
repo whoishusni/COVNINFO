@@ -14,11 +14,11 @@ import java.util.ArrayList;
 import id.husni.covninfo.R;
 import id.husni.covninfo.model.HistoryModel;
 
-public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.ViewHolder> {
+public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.ViewHolder> {
     private ArrayList<HistoryModel> historyModels = new ArrayList<>();
     private Context context;
 
-    public TodayListAdapter(Context context) {
+    public HistoryListAdapter(Context context) {
         this.context = context;
     }
 
@@ -38,13 +38,13 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
 
     @NonNull
     @Override
-    public TodayListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HistoryListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.history_item_holder,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TodayListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HistoryListAdapter.ViewHolder holder, int position) {
         holder.lastUpdateDate.setText(historyModels.get(position).getLastUpdate());
         holder.tvConfirmed.setText(historyModels.get(position).getConfirmed());
         holder.tvRecovered.setText(historyModels.get(position).getRecovered());
