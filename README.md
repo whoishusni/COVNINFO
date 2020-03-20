@@ -11,7 +11,7 @@
 - [Mathdroid](https://github.com/mathdroid/covid-19-api) for JSON Data  
 
 ## License
-MIT License  
+Apache License 2.0  
 
 Copyright (c) 2020 Moh Husni Mubaraq  
 Transitively from the John Hopkins Site, the data may not be used for commercial purposes.
