@@ -10,6 +10,12 @@ public class IndonesiaSummaryModel {
     @SerializedName("meninggal")
     private String meninggalIdn;
 
+    public IndonesiaSummaryModel(String positifIdn, String sembuhIdn, String meninggalIdn) {
+        this.positifIdn = positifIdn;
+        this.sembuhIdn = sembuhIdn;
+        this.meninggalIdn = meninggalIdn;
+    }
+
     public String getPositifIdn() {
         return positifIdn;
     }

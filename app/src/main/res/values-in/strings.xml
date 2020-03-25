@@ -16,7 +16,6 @@
     <string name="daily_notif">Notifikasi Harian</string>
     <string name="key_daily_reminder">daily reminder key</string>
     <string name="daily_reminder_summary">Pengingat Harian Tiap Jam 08:00</string>
-    <string name="last_update">Last Update</string>
     <string name="daily_reminder_setup">Pengingat Harian Di Atur</string>
     <string name="daily_reminder_canceled">Pengingat Harian Dibatalkan</string>
     <string name="notif_title">Check Aplikasi Untuk Melihat Data Baru</string>
@@ -40,6 +39,7 @@
     <string name="indonesia_summary_data">Ringkasan Data Indonesia</string>
     <string name="source_kemenkes">Sumber : Kemenkes</string>
     <string name="aboutTextJsonApiTwo">Kawalcorona</string>
-    <string name="aboutTextDatabaseTwo">Kementrian Kesehatan RI (Indonesia)</string>
+    <string name="aboutTextDatabaseTwo">Kementerian Kesehatan RI (Indonesia)</string>
     <string name="source_JHU">Sumber : JHU CSSE</string>
+    <string name="province">Provinsi</string>
 </resources>

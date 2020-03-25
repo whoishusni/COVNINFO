@@ -13,6 +13,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.IndonesiaProvinceActivity" />
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -32,9 +33,7 @@
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.SettingActivity" />
         <activity android:name=".activity.InfoActivity" />
-        <activity android:name=".activity.MainActivity">
-
-        </activity>
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

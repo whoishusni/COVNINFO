@@ -1,6 +1,7 @@
 package id.husni.covninfo.fragment;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -21,11 +22,13 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import id.husni.covninfo.R;
+import id.husni.covninfo.activity.IndonesiaProvinceActivity;
 import id.husni.covninfo.model.IndonesiaSummaryModel;
 import id.husni.covninfo.viewmodel.IndonesiaSummaryViewModel;
 
@@ -50,6 +53,14 @@ public class IdnFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        FloatingActionButton floatingProvince = view.findViewById(R.id.floatingProvince);
+        floatingProvince.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent provinceIntent = new Intent(getContext(), IndonesiaProvinceActivity.class);
+                startActivity(provinceIntent);
+            }
+        });
         PieChart pieChart = view.findViewById(R.id.idnSummaryPie);
         IndonesiaSummaryViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(IndonesiaSummaryViewModel.class);
         viewModel.setSummaryData();
@@ -78,6 +89,7 @@ public class IdnFragment extends Fragment {
                 description.setText(getResources().getString(R.string.source_kemenkes));
                 description.setTextColor(Color.WHITE);
                 description.setTextSize(14);
+                description.setPosition(400,1230);
 
                 pieChart.setVisibility(View.VISIBLE);
                 pieChart.animateXY(2000,2000);

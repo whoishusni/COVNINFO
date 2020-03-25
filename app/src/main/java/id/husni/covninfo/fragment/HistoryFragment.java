@@ -69,18 +69,26 @@ public class HistoryFragment extends Fragment implements SwipeRefreshLayout.OnRe
     private void loadListData() {
         HistoryViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(HistoryViewModel.class);
         viewModel.setTodayData();
-        swipeRefreshLayout.setRefreshing(true);
+        refreshingData(true);
         viewModel.getTodayListData().observe(this, new Observer<ArrayList<HistoryModel>>() {
             @Override
             public void onChanged(ArrayList<HistoryModel> historyModels) {
                 if (historyModels == null) {
                     tvEmptyList.setVisibility(View.VISIBLE);
-                    swipeRefreshLayout.setRefreshing(false);
+                    refreshingData(false);
                 } else {
                     adapter.setHistoryModels(historyModels);
-                    swipeRefreshLayout.setRefreshing(false);
+                    refreshingData(false);
                 }
             }
         });
+    }
+
+    private void refreshingData(boolean b) {
+        if (b) {
+            swipeRefreshLayout.setRefreshing(true);
+        } else {
+            swipeRefreshLayout.setRefreshing(false);
+        }
     }
 }

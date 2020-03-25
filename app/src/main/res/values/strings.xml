@@ -6,7 +6,7 @@
     <string name="history">History</string>
     <string name="about">About</string>
     <string name="setting">Setting</string>
-    <string name="not_update">History\'s data has not been updated</string>
+    <string name="not_update">Data has not been updated</string>
     <string name="confirmed">Confirmed</string>
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
@@ -16,7 +16,6 @@
     <string name="daily_notif">Daily Notification</string>
     <string name="key_daily_reminder">daily reminder key</string>
     <string name="daily_reminder_summary">Daily Reminder Every 08:00</string>
-    <string name="last_update">Last Update</string>
     <string name="daily_reminder_setup">Daily Reminder Is Setup</string>
     <string name="daily_reminder_canceled">Daily Reminder Canceled</string>
     <string name="notif_title">Check Your Apps, For New Updated Data</string>
@@ -42,5 +41,6 @@
     <string name="indonesia_summary_data">Indonesia Summary Data</string>
     <string name="source_kemenkes">Source : Kemenkes</string>
     <string name="source_JHU">Source : JHU CSSE</string>
+    <string name="province">Province</string>
 
 </resources>

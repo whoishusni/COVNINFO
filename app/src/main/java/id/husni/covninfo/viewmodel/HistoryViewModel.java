@@ -20,7 +20,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class HistoryViewModel extends ViewModel {
-    private MutableLiveData<ArrayList<HistoryModel>> mutableLiveData = new MutableLiveData<>();
+    private final MutableLiveData<ArrayList<HistoryModel>> mutableLiveData = new MutableLiveData<>();
 
     public void setTodayData() {
         Retrofit retrofit = RetrofitServiceApi.getRetrofitService();

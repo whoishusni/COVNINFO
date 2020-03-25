@@ -16,7 +16,6 @@
     <string name="daily_notif">Daily Notification</string>
     <string name="key_daily_reminder">daily reminder key</string>
     <string name="daily_reminder_summary">Daily Reminder Every 08:00</string>
-    <string name="last_update">Last Update</string>
     <string name="daily_reminder_setup">Daily Reminder Is Setup</string>
     <string name="daily_reminder_canceled">Daily Reminder Canceled</string>
     <string name="notif_title">Check Your Apps, For New Updated Data</string>
@@ -42,5 +41,6 @@
     <string name="aboutTextJsonApiTwo">Kawalcorona</string>
     <string name="aboutTextDatabaseTwo">Indonesian Ministry of Health (Indonesia)</string>
     <string name="source_JHU">Source : JHU CSSE</string>
+    <string name="province">Province</string>
 
 </resources>

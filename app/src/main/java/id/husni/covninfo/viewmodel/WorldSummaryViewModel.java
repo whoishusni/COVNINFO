@@ -13,7 +13,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class WorldSummaryViewModel extends ViewModel {
-    private MutableLiveData<WorldSummaryModel> mutableLiveData = new MutableLiveData<>();
+    private final MutableLiveData<WorldSummaryModel> mutableLiveData = new MutableLiveData<>();
 
     public void setSummaryWorldData() {
         Retrofit retrofit = RetrofitServiceApi.getRetrofitService();

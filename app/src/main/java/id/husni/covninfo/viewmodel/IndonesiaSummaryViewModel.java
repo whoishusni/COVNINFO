@@ -16,7 +16,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class IndonesiaSummaryViewModel extends ViewModel {
-    private MutableLiveData<ArrayList<IndonesiaSummaryModel>> summaryModel = new MutableLiveData<>();
+    private final MutableLiveData<ArrayList<IndonesiaSummaryModel>> summaryModel = new MutableLiveData<>();
 
     public void setSummaryData(){
         Retrofit retrofit = RetrofitServiceApi.getRetrofitServiceIndo();
