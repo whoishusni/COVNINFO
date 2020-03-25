@@ -1,5 +1,8 @@
 ![demo_image](https://user-images.githubusercontent.com/28988446/77063551-79943b00-6a10-11ea-9d93-a67d559ea583.png)
-# COVNINFO
+# COVNINFO  
+
+## What's New  
+- [v2.0] Province Data Added
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
@@ -8,8 +11,8 @@
 - LiveData  
 
 ## API  
-- [Mathdroid](https://github.com/mathdroid/covid-19-api) for JSON Data  
-
+- [Mathdroid](https://github.com/mathdroid/covid-19-api) for Global JSON Data  
+- [KawalCorona](https://kawalcorona.com/api/) for Indo JSON Data  
 ## Note  
 Transitively from the John Hopkins Site, the data may not be used for commercial purposes.  
 
