@@ -13,15 +13,6 @@
         android:layout_margin="@dimen/marginHorizCard"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/logo"
-            android:layout_marginTop="@dimen/marginVertiCard"
-            android:layout_marginStart="@dimen/marginHorizCard"
-            android:layout_marginEnd="@dimen/marginHorizCard"
-            android:contentDescription="@string/app_name"/>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,6 +103,14 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutTextDatabaseTwo"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
@@ -128,6 +127,14 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutTextJsonApiTwo"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
             android:layout_marginTop="18dp"
             android:textStyle="bold"
             android:layout_width="match_parent"
@@ -138,12 +145,12 @@
 
         <Button
             android:id="@+id/githubBtn"
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/github"
             android:backgroundTint="@color/colorAccent"
-            android:textColor="@android:color/white"
-            android:drawableTop="@drawable/ic_person_black_24dp"/>
+            android:drawableTop="@drawable/ic_person_black_24dp"
+            android:text="@string/github"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </ScrollView>
