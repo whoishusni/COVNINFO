@@ -32,10 +32,14 @@
     <string name="aboutLabelLicense">Lisensi</string>
     <string name="aboutTextLicense">MIT License (C) 2020 Moh Husni Mubaraq</string>
     <string name="aboutLabelDatabase">Database</string>
-    <string name="aboutTextDatabase">Repositori Data Oleh Johns Hopkins CSSE</string>
+    <string name="aboutTextDatabase">JHU CSSE (Global)</string>
     <string name="aboutLabelJsonApi">API</string>
     <string name="aboutTextJsonApi">Mathdroid</string>
     <string name="find_me_on_github_github_com_whoishusni">Temukan Saya Di Github :</string>
     <string name="github">Github</string>
     <string name="indonesia_summary_data">Ringkasan Data Indonesia</string>
+    <string name="source_kemenkes">Sumber : Kemenkes</string>
+    <string name="aboutTextJsonApiTwo">Kawalcorona</string>
+    <string name="aboutTextDatabaseTwo">Kementrian Kesehatan RI (Indonesia)</string>
+    <string name="source_JHU">Sumber : JHU CSSE</string>
 </resources>
