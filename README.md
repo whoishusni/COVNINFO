@@ -1,6 +1,6 @@
 # COVNINFO  
 ## What's New  
-- [v2.0] Province Data Added [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+- [v2.0] Provinces in Indonesia have been added [See Here](https://github.com/whoishusni/COVNINFO/releases)  
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
