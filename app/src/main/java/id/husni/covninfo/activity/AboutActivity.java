@@ -1,3 +1,10 @@
+
+/*
+ * Made With Love
+ * Author @Moh Husni Mubaraq
+ * Not for Commercial Purpose
+ */
+
 package id.husni.covninfo.activity;
 
 import androidx.appcompat.app.AppCompatActivity;

@@ -1,3 +1,9 @@
+/*
+ * Made With Love
+ * Author @Moh Husni Mubaraq
+ * Not for Commercial Purpose
+ */
+
 package id.husni.covninfo.viewmodel;
 
 import androidx.lifecycle.LiveData;
