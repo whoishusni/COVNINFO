@@ -13,7 +13,7 @@
 - [KawalCorona](https://kawalcorona.com/api/) for Indo JSON Data  
 
 ## Image
-![demo_image](https://user-images.githubusercontent.com/28988446/77063551-79943b00-6a10-11ea-9d93-a67d559ea583.png)
+![demo_image](https://user-images.githubusercontent.com/28988446/77763335-de394080-7075-11ea-95db-321a1ccd4e20.jpg)
 
 ## Note  
 Transitively from the John Hopkins Site, the data may not be used for commercial purposes.  
