@@ -10,10 +10,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/marginVertiCard"
-        android:layout_marginBottom="@dimen/marginVertiCard"
-        android:layout_marginEnd="@dimen/marginHorizCard"
-        android:layout_marginStart="@dimen/marginHorizCard"
+       style="@style/AppTheme.styleMarginAll"
         android:elevation="@dimen/cardElevation"
         app:cardCornerRadius="@dimen/cardRadius"
         android:backgroundTint="@color/colorPrimary">

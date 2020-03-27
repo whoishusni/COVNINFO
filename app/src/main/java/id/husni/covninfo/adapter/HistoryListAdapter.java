@@ -63,7 +63,7 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
         return historyModels.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView lastUpdateDate;
         final TextView tvConfirmed;
         final TextView tvRecovered;

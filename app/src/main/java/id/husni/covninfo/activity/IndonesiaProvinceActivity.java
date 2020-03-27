@@ -70,8 +70,8 @@ public class IndonesiaProvinceActivity extends AppCompatActivity implements Swip
         });
     }
 
-    private void refreshing(boolean b) {
-        if (b) {
+    private void refreshing(boolean isRefreshing) {
+        if (isRefreshing) {
             swipeRefreshProvince.setRefreshing(true);
         } else {
             swipeRefreshProvince.setRefreshing(false);

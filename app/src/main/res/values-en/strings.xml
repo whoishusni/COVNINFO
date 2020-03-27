@@ -7,7 +7,7 @@
     <string name="about">About</string>
     <string name="setting">Setting</string>
     <string name="not_update">History\'s data has not been updated</string>
-    <string name="confirmed">Confirmed</string>
+    <string name="confirmed">Positive</string>
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
     <string name="legends">Legends :</string>
@@ -29,7 +29,7 @@
     <string name="aboutLabelDeveloper">Developer</string>
     <string name="aboutTextDeveloper">Moh Husni Mubaraq</string>
     <string name="aboutLabelLicense">License</string>
-    <string name="aboutTextLicense">MIT License (C) 2020 Moh Husni Mubaraq</string>
+    <string name="aboutTextLicense">MIT License (c) 2020 Moh Husni Mubaraq</string>
     <string name="aboutLabelDatabase">Database</string>
     <string name="aboutTextDatabase">JHU CSSE (Global)</string>
     <string name="aboutLabelJsonApi">API</string>
@@ -42,5 +42,19 @@
     <string name="aboutTextDatabaseTwo">Indonesian Ministry of Health (Indonesia)</string>
     <string name="source_JHU">Source : JHU CSSE</string>
     <string name="province">Province</string>
+    <string name="news">News</string>
+    <string name="read_more">Read More</string>
+    <string name="sourceNews">"Source : "</string>
+    <string name="authorNews">"Author : "</string>
+    <string name="description_unavailable">Description  is not available, please press the button below to view the news</string>
+    <string name="dateNews">"Date : "</string>
+    <string name="aboutTextJsonApiThree">ApiNews</string>
+    <string name="aboutTextTester">Purnomo Lamala</string>
+    <string name="aboutLabelTester">App Tester</string>
+    <string name="made_with">Made With</string>
+    <string name="for_human">For Human</string>
+    <string name="aboutTextTesterTwo">Muh Iksan Raharjo</string>
+    <string name="editor">Editor</string>
+    <string name="zero">0</string>
 
 </resources>

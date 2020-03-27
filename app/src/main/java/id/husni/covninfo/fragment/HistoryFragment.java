@@ -90,8 +90,8 @@ public class HistoryFragment extends Fragment implements SwipeRefreshLayout.OnRe
         });
     }
 
-    private void refreshingData(boolean b) {
-        if (b) {
+    private void refreshingData(boolean isRefresh) {
+        if (isRefresh) {
             swipeRefreshLayout.setRefreshing(true);
         } else {
             swipeRefreshLayout.setRefreshing(false);

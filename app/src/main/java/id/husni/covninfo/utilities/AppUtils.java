@@ -20,4 +20,8 @@ public class AppUtils {
     public static final String ENDPOINT_SUMMARY_INDONESIA = "indonesia";
     public static final String ENDPOINT_INDONESIA_PROVINSI = "indonesia/provinsi";
 
+    //URL Berita
+    public static final String BASE_URL_NEWS = "https://newsapi.org/v2/";
+    public static final String ENDPOINT_TOP_HEADLINE_NEWS = "top-headlines";
+
 }

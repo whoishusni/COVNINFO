@@ -7,9 +7,9 @@
     <string name="about">Tentang</string>
     <string name="setting">Pengaturan</string>
     <string name="not_update">Data Riwayat Belum Di Update</string>
-    <string name="confirmed">Terkonfirmasi</string>
+    <string name="confirmed">Positif</string>
     <string name="recovered">Sembuh</string>
-    <string name="deaths">Kematian</string>
+    <string name="deaths">Meninggal</string>
     <string name="legends">Ket :</string>
     <string name="world_summary_data">Ringkasan Data Dunia</string>
     <string name="from_corona">Dari Covid-19</string>
@@ -29,7 +29,7 @@
     <string name="aboutLabelDeveloper">Developer</string>
     <string name="aboutTextDeveloper">Moh Husni Mubaraq</string>
     <string name="aboutLabelLicense">Lisensi</string>
-    <string name="aboutTextLicense">MIT License (C) 2020 Moh Husni Mubaraq</string>
+    <string name="aboutTextLicense">MIT License (c) 2020 Moh Husni Mubaraq</string>
     <string name="aboutLabelDatabase">Database</string>
     <string name="aboutTextDatabase">JHU CSSE (Global)</string>
     <string name="aboutLabelJsonApi">API</string>
@@ -42,4 +42,18 @@
     <string name="aboutTextDatabaseTwo">Kementerian Kesehatan RI (Indonesia)</string>
     <string name="source_JHU">Sumber : JHU CSSE</string>
     <string name="province">Provinsi</string>
+    <string name="news">Berita</string>
+    <string name="read_more">Baca</string>
+    <string name="sourceNews">"Sumber : "</string>
+    <string name="authorNews">Penulis :</string>
+    <string name="description_unavailable">deskripsi tidak tersedia, silahkan tekan tombol dibawah untuk melihat berita</string>
+    <string name="dateNews">Tanggal :</string>
+    <string name="aboutTextJsonApiThree">ApiNews</string>
+    <string name="aboutTextTester">Purnomo Lamala</string>
+    <string name="aboutLabelTester">App Tester</string>
+    <string name="made_with">Made With</string>
+    <string name="for_human">For Human</string>
+    <string name="aboutTextTesterTwo">Muh Iksan Raharjo</string>
+    <string name="editor">Redaksi</string>
+    <string name="zero">0</string>
 </resources>

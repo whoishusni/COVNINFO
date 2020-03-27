@@ -57,7 +57,7 @@ public class WorldSummaryModel {
         this.recovered = recovered;
     }
 
-    public class Confirmed {
+    public static class Confirmed {
         @SerializedName("value")
         private int value;
         @SerializedName("detail")
@@ -85,7 +85,7 @@ public class WorldSummaryModel {
         }
     }
 
-    public class Deaths {
+    public static class Deaths {
         @SerializedName("value")
         private int value;
         @SerializedName("detail")
@@ -113,7 +113,7 @@ public class WorldSummaryModel {
         }
     }
 
-    public class Recovered {
+    public static class Recovered {
         @SerializedName("value")
         private int value;
         @SerializedName("detail")

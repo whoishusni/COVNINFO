@@ -24,7 +24,7 @@ public class IndonesiaProvinsiModel {
         this.attributesProv = attributesProv;
     }
 
-    public class AttributesProv {
+    public static class AttributesProv {
         @SerializedName("Provinsi")
         private String provinsi;
         @SerializedName("Kasus_Posi")

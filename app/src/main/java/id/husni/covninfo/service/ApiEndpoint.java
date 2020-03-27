@@ -12,10 +12,12 @@ import id.husni.covninfo.model.HistoryModel;
 import id.husni.covninfo.model.IndonesiaProvinsiModel;
 import id.husni.covninfo.model.IndonesiaSummaryModel;
 import id.husni.covninfo.model.WorldSummaryModel;
+import id.husni.covninfo.model.news.NewsResponse;
 import id.husni.covninfo.utilities.AppUtils;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiEndpoint {
     //Endpoint riwayat
@@ -33,5 +35,10 @@ public interface ApiEndpoint {
     //Endpoint Provinsi Indonesia
     @GET(AppUtils.ENDPOINT_INDONESIA_PROVINSI)
     Call<List<IndonesiaProvinsiModel>> getProvince();
+
+    @GET(AppUtils.ENDPOINT_TOP_HEADLINE_NEWS)
+    Call<NewsResponse> getNews(@Query("country") String countryCode,
+                               @Query("category") String category,
+                               @Query("apiKey") String apiKey);
 
 }

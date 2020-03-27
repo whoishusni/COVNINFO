@@ -62,7 +62,7 @@ public class IndonProvinceListAdapter extends RecyclerView.Adapter<IndonProvince
         return indoList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView tvConfirmed;
         final TextView tvRecovered;
         final TextView tvDeath;
