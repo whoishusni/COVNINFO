@@ -1,5 +1,6 @@
 # COVNINFO  
 ## What's New  
+- [v2.5] Additional news features about corona virus in Indonesia [See Here](https://github.com/whoishusni/COVNINFO/releases)  
 - [v2.0] Provinces in Indonesia have been added [See Here](https://github.com/whoishusni/COVNINFO/releases)  
 ## Library Reference :  
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
