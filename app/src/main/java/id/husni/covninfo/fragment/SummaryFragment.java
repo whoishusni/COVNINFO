@@ -7,39 +7,39 @@
 package id.husni.covninfo.fragment;
 
 
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.data.PieData;
-import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import id.husni.covninfo.R;
+import id.husni.covninfo.activity.WorldHistory;
 import id.husni.covninfo.model.WorldSummaryModel;
 import id.husni.covninfo.viewmodel.WorldSummaryViewModel;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SummaryFragment extends Fragment {
+public class SummaryFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
 
-
+    private SwipeRefreshLayout swipe;
+    private TextView tvPositive;
+    private TextView tvRecovered;
+    private TextView tvDeaths;
     public SummaryFragment() {
         // Required empty public constructor
     }
@@ -55,42 +55,51 @@ public class SummaryFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        PieChart pieChart = view.findViewById(R.id.worldSummaryPie);
+        swipe = view.findViewById(R.id.swipeRefreshWorld);
+        swipe.setOnRefreshListener(this);
+        FloatingActionButton floating = view.findViewById(R.id.floatingWorld);
+        floating.setOnClickListener(this);
+        tvPositive = view.findViewById(R.id.tvValuePositifWorld);
+        tvRecovered = view.findViewById(R.id.tvValueRecoveredWorld);
+        tvDeaths = view.findViewById(R.id.tvValueDeathsWorld);
+        loadWorldData();
+    }
+
+    private void loadWorldData() {
         WorldSummaryViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(WorldSummaryViewModel.class);
         viewModel.setSummaryWorldData();
+        refreshData(true);
         viewModel.getSummaryWorldData().observe(this, new Observer<WorldSummaryModel>() {
             @Override
             public void onChanged(WorldSummaryModel worldSummaryModel) {
-               //Set data to Chart
-                List<PieEntry> entries = new ArrayList<>();
-                entries.add(new PieEntry(worldSummaryModel.getConfirmed().getValue(),getResources().getString(R.string.confirmed)));
-                entries.add(new PieEntry(worldSummaryModel.getRecovered().getValue(),getResources().getString(R.string.recovered)));
-                entries.add(new PieEntry(worldSummaryModel.getDeaths().getValue(),getResources().getString(R.string.deaths)));
-
-                PieDataSet pieDataSet = new PieDataSet(entries, getResources().getString(R.string.from_corona));
-                pieDataSet.setColors(ColorTemplate.PASTEL_COLORS);
-                pieDataSet.setValueTextColor(Color.WHITE);
-                pieDataSet.setValueTextSize(20);
-
-                PieData pieData = new PieData(pieDataSet);
-
-                Description description = new Description();
-                description.setText(getResources().getString(R.string.source_JHU));
-                description.setTextColor(Color.WHITE);
-                description.setTextSize(14);
-
-                Legend legend = pieChart.getLegend();
-                legend.setTextColor(Color.WHITE);
-                legend.setTextSize(13);
-                legend.setForm(Legend.LegendForm.CIRCLE);
-
-                pieChart.setVisibility(View.VISIBLE);
-                pieChart.animateXY(2000,2000);
-                pieChart.setDescription(description);
-                pieChart.setHoleColor(getResources().getColor(R.color.colorPrimaryDark));
-                pieChart.setHoleRadius(60);
-                pieChart.setData(pieData);
+                if (worldSummaryModel != null) {
+                    refreshData(false);
+                    Locale localeID = new Locale("id","ID");
+                    NumberFormat numberFormat = NumberFormat.getInstance(localeID);
+                    tvPositive.setText(String.valueOf(numberFormat.format(worldSummaryModel.getConfirmed().getValue())));
+                    tvRecovered.setText(String.valueOf(numberFormat.format(worldSummaryModel.getRecovered().getValue())));
+                    tvDeaths.setText(String.valueOf(numberFormat.format(worldSummaryModel.getDeaths().getValue())));
+                }
             }
         });
+    }
+
+    private void refreshData(boolean isRefresh) {
+        if (isRefresh) {
+            swipe.setRefreshing(true);
+        } else {
+            swipe.setRefreshing(false);
+        }
+    }
+
+    @Override
+    public void onRefresh() {
+        loadWorldData();
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intentWorldHistory = new Intent(getContext(), WorldHistory.class);
+        startActivity(intentWorldHistory);
     }
 }

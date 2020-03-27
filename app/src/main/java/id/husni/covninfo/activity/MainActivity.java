@@ -17,11 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import id.husni.covninfo.R;
-import id.husni.covninfo.activity.AboutActivity;
-import id.husni.covninfo.activity.InfoActivity;
-import id.husni.covninfo.activity.SettingActivity;
 import id.husni.covninfo.fragment.IdnFragment;
-import id.husni.covninfo.fragment.HistoryFragment;
 import id.husni.covninfo.fragment.NewsFragment;
 import id.husni.covninfo.fragment.SummaryFragment;
 
@@ -64,15 +60,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.main_frame,idnFragment)
-                        .commit();
-                return true;
-
-            //Ke Fragment Today
-            case R.id.historyMenu:
-                HistoryFragment historyFragment = new HistoryFragment();
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_frame, historyFragment)
                         .commit();
                 return true;
 

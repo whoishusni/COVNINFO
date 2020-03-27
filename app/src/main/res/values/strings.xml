@@ -3,7 +3,6 @@
     <string name="summary">Summary</string>
     <string name="indonesia">Indonesia</string>
     <string name="info">Info</string>
-    <string name="history">History</string>
     <string name="about">About</string>
     <string name="setting">Setting</string>
     <string name="not_update">Data has not been updated</string>
@@ -12,7 +11,6 @@
     <string name="deaths">Deaths</string>
     <string name="legends">Legends :</string>
     <string name="world_summary_data">World Summary Data</string>
-    <string name="from_corona">From Covid-19</string>
     <string name="daily_notif">Daily Notification</string>
     <string name="key_daily_reminder">daily reminder key</string>
     <string name="daily_reminder_summary">Daily Reminder Every 08:00</string>
@@ -56,6 +54,7 @@
     <string name="for_human">For Human</string>
     <string name="editor">Editor</string>
     <string name="zero">0</string>
+    <string name="history">History</string>
 
 
 </resources>

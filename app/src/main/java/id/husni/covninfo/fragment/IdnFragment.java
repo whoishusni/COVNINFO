@@ -33,7 +33,7 @@ import id.husni.covninfo.viewmodel.IndonesiaSummaryViewModel;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class IdnFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class IdnFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
 
     private SwipeRefreshLayout swipe;
     private TextView tvPositive;
@@ -60,13 +60,7 @@ public class IdnFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         tvPositive = view.findViewById(R.id.tvValuePositifIdn);
         tvRecovered = view.findViewById(R.id.tvValueRecoveredIdn);
         tvDeath = view.findViewById(R.id.tvValueDeathsIdn);
-        floatingProvince.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent provinceIntent = new Intent(getContext(), IndonesiaProvinceActivity.class);
-                startActivity(provinceIntent);
-            }
-        });
+        floatingProvince.setOnClickListener(this);
         loadIdnData();
     }
 
@@ -77,10 +71,12 @@ public class IdnFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         viewModel.getSummaryData().observe(this, new Observer<ArrayList<IndonesiaSummaryModel>>() {
             @Override
             public void onChanged(ArrayList<IndonesiaSummaryModel> indonesiaSummaryModels) {
-                refreshData(false);
-                tvPositive.setText(indonesiaSummaryModels.get(0).getPositifIdn());
-                tvRecovered.setText(indonesiaSummaryModels.get(0).getSembuhIdn());
-                tvDeath.setText(indonesiaSummaryModels.get(0).getMeninggalIdn());
+                if (indonesiaSummaryModels.size() > 0) {
+                    refreshData(false);
+                    tvPositive.setText(indonesiaSummaryModels.get(0).getPositifIdn());
+                    tvRecovered.setText(indonesiaSummaryModels.get(0).getSembuhIdn());
+                    tvDeath.setText(indonesiaSummaryModels.get(0).getMeninggalIdn());
+                }
             }
         });
     }
@@ -96,5 +92,11 @@ public class IdnFragment extends Fragment implements SwipeRefreshLayout.OnRefres
     @Override
     public void onRefresh() {
         loadIdnData();
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent provinceIntent = new Intent(getContext(), IndonesiaProvinceActivity.class);
+        startActivity(provinceIntent);
     }
 }

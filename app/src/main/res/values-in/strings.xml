@@ -3,7 +3,6 @@
     <string name="summary">Ringkasan</string>
     <string name="indonesia">Indonesia</string>
     <string name="info">Info</string>
-    <string name="history">Riwayat</string>
     <string name="about">Tentang</string>
     <string name="setting">Pengaturan</string>
     <string name="not_update">Data Riwayat Belum Di Update</string>
@@ -12,7 +11,6 @@
     <string name="deaths">Meninggal</string>
     <string name="legends">Ket :</string>
     <string name="world_summary_data">Ringkasan Data Dunia</string>
-    <string name="from_corona">Dari Covid-19</string>
     <string name="daily_notif">Notifikasi Harian</string>
     <string name="key_daily_reminder">daily reminder key</string>
     <string name="daily_reminder_summary">Pengingat Harian Tiap Jam 08:00</string>
@@ -56,4 +54,5 @@
     <string name="aboutTextTesterTwo">Muh Iksan Raharjo</string>
     <string name="editor">Redaksi</string>
     <string name="zero">0</string>
+    <string name="history">Riwayat</string>
 </resources>

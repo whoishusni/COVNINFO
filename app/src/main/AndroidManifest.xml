@@ -13,6 +13,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.WorldHistory" />
         <activity android:name=".activity.NewsDetail" />
         <activity android:name=".activity.IndonesiaProvinceActivity" />
         <activity

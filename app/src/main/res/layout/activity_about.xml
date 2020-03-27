@@ -126,7 +126,6 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/aboutTextDatabaseTwo"
@@ -179,7 +178,8 @@
             android:backgroundTint="@color/colorAccent"
             android:drawableTop="@drawable/ic_person_black_24dp"
             android:text="@string/github"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
 </ScrollView>
