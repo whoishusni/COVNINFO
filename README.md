@@ -13,6 +13,7 @@
 ## API  
 - [Mathdroid](https://github.com/mathdroid/covid-19-api) for Global JSON Data  
 - [KawalCorona](https://kawalcorona.com/api/) for Indo JSON Data  
+- [Api News](https://newsapi.org) for News JSON Data  
 
 ## Image
 ![demo_image](https://user-images.githubusercontent.com/28988446/77763335-de394080-7075-11ea-95db-321a1ccd4e20.jpg)
