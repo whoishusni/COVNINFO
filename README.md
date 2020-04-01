@@ -1,9 +1,9 @@
 # COVNINFO  
 ## What's New  
 - [v3.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
--- Delete unnecessary interface, and make it simple  
--- Pie Chart removed    
--- One of bottom nav menu deleted, cause i wanna make it simple  
+Delete unnecessary interface, and make it simple  
+Pie Chart removed    
+One of bottom nav menu deleted, cause i wanna make it simple  
 - [v2.5] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
 Additional news features about corona virus in Indonesia   
 - [v2.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
