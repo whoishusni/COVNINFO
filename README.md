@@ -1,10 +1,14 @@
 # COVNINFO  
 ## What's New  
-- [v3.0] delete unnecessary interface [See Here](https://github.com/whoishusni/COVNINFO/releases)
-- [v2.5] Additional news features about corona virus in Indonesia [See Here](https://github.com/whoishusni/COVNINFO/releases)  
-- [v2.0] Provinces in Indonesia have been added [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+- [v3.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+-- Delete unnecessary interface, and make it simple  
+-- Pie Chart removed    
+-- One of bottom nav menu deleted, cause i wanna make it simple  
+- [v2.5] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+Additional news features about corona virus in Indonesia   
+- [v2.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+Provinces in Indonesia have been added   
 ## Library Reference :  
-- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
 - [Retrofit](https://github.com/square/retrofit)
 - ViewModel  
