@@ -1,4 +1,5 @@
 # COVNINFO  
+Don't forget to star and fork this project, I will really appreciate it  
 ## What's New  
 - [v3.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
 Delete unnecessary interface, and make it simple  
